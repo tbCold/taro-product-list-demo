@@ -1,0 +1,73 @@
+.index {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  .topPart {
+    width: 100%;
+    height: 200px;
+    background-color: blue;
+    line-height: 200px;
+  }
+  .centerPart {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .categoryList {
+      width: 200px;
+      height: 100%;
+      background-color: #f2f2f2;
+      .categoryItem {
+        width: 200px;
+        height: 100px;
+        line-height: 100px;
+        color: black;
+        font-weight: normal;
+        text-align: center;
+        font-size: 30px;
+      }
+      .activeCategoryItem {
+        background-color: white;
+      }
+    }
+    .productList {
+      position: absolute;
+      top: 200px;
+      bottom: 100px;
+      left: 200px;
+      background-color: white;
+      .productItem {
+        width: 100%;
+        height: 200px;
+        background-color: #f2f2f2;
+        border-bottom: 1px solid #999;
+        line-height: 200px;
+        box-sizing: border-box;
+        padding-left: 40px;
+        font-size: 30px;
+        color: #333;
+      }
+      .tagItem {
+        height: 100px;
+        line-height: 100px;
+        font-size: 40px;
+        font-weight: bolder;
+        padding-left: 20px;
+        color: black;
+        background-color: #999;
+      }
+    }
+  }
+  .bottomPart {
+    width: 100%;
+    height: 100px;
+    background-color: blueviolet;
+    line-height: 100px;
+  }
+}

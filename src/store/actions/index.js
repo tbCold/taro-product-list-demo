@@ -1,0 +1,1 @@
+export const CHANGE_TAG_STATUS = 'CHANGE_TAG_STATUS'
